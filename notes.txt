@@ -1,0 +1,24 @@
+more01.c学到的东西
+命令行的参数个数，和命令行的参数
+指向数组的指针 
+如何让程序具有管道的性质 这个很酷啊
+
+more02.c学到的东西
+getc()从文件中获取字符 
+getchar()从标准输入中获取字符
+getchar() is equivalent to getc(stdin).
+键盘和显示器的描述文件:
+/dev/tty
+这个文件很有意思，存的是输入键盘刚刚输入的文本
+cat  /dev/tty 试一试，输入几个字符然后再按回车，输入什么就得到什么
+
+who2.c学到的东西
+who 命令就是要读取utmp文件 
+如何找相关的信息:man utmp;less /usr/include/utem.h
+三个函数 open read close的用法
+结构体元素的引用
+如何消除空白记录 通过USER_PROCESS过滤
+将unix时间利用ctime函数转换成人类可读的字符串
+了解到了如何将字符串按照指定的格式输出 printf("%12.12s", cp+4 );       /* pick 12 chars from pos 4*/
+
+
